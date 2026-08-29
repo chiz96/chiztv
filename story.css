@@ -1,0 +1,76 @@
+
+/* ChizTV story section */
+.story-section {
+  background: #0d0d0d;
+  border-top: 1px solid #232323;
+  border-bottom: 1px solid #232323;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1.08fr .92fr;
+  gap: 42px;
+  align-items: center;
+}
+
+.video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #303030;
+  background: #050505;
+  box-shadow: 0 20px 50px rgba(0,0,0,.32);
+}
+
+.video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.story-copy h2 {
+  font-size: 58px;
+  margin-bottom: 20px;
+}
+
+.story-copy p {
+  color: #bdbdbd;
+  line-height: 1.72;
+  margin: 0 0 13px;
+}
+
+.story-copy .story-lead {
+  color: #f2f2f2;
+  font-size: 18px;
+}
+
+.story-points {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 20px 0 24px;
+}
+
+.story-points span {
+  border: 1px solid #363636;
+  border-left: 3px solid #e51b23;
+  background: #090909;
+  border-radius: 999px;
+  padding: 8px 11px;
+  color: #d0d0d0;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  .story-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 620px) {
+  .story-copy h2 { font-size: 44px; }
+}
