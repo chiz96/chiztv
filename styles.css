@@ -23,3 +23,219 @@
   .real-photo-grid{grid-template-columns:1fr}
   .real-photo-grid img{height:220px}
 }
+
+/* ===== Homepage v8: Porsche provenance ===== */
+.provenance{margin-top:34px;padding-top:28px;border-top:1px solid #242424}
+.provenance-copy{display:grid;grid-template-columns:220px 1fr;gap:18px;align-items:end;margin-bottom:18px}
+.provenance-copy h3{font-family:"Barlow Condensed";font-size:34px;text-transform:uppercase;line-height:1;margin:0}
+.provenance-copy p{grid-column:2;color:#b8b8b8;line-height:1.6;margin:0;max-width:760px}
+.provenance-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.provenance-grid img{width:100%;height:180px;object-fit:cover;border-radius:8px;border:1px solid #2b2b2b;background:#050505}
+@media(max-width:900px){
+  .provenance-copy{grid-template-columns:1fr}
+  .provenance-copy p{grid-column:1}
+  .provenance-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .provenance-grid{grid-template-columns:1fr}
+  .provenance-grid img{height:220px}
+}
+
+/* ===== Homepage v9: channel history ===== */
+.project-history-card{position:relative}
+.project-number{position:absolute;z-index:3;top:14px;left:14px;width:52px;height:52px;display:grid;place-items:center;background:#e51b23;color:#fff;border:3px solid #090909;border-radius:50%;font-family:"Barlow Condensed";font-weight:800;font-size:24px;box-shadow:0 6px 18px rgba(0,0,0,.32)}
+.project-history-card .project-img{height:270px}
+.first-build{background:#111;border-top:1px solid #242424;border-bottom:1px solid #242424}
+.first-build-feature{display:grid;grid-template-columns:1.08fr .92fr;background:#090909;border:1px solid #2d2d2d;border-radius:12px;overflow:hidden}
+.first-build-main{min-height:410px}
+.first-build-main img{width:100%;height:100%;object-fit:cover}
+.first-build-copy{padding:36px;display:flex;flex-direction:column;justify-content:center}
+.first-build-copy .tag{color:#e51b23;font-size:13px}
+.first-build-copy h3{font-family:"Barlow Condensed";font-size:42px;line-height:1;text-transform:uppercase;margin:9px 0 16px}
+.first-build-copy p{color:#b8b8b8;line-height:1.68;margin:0 0 13px}
+.first-build-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
+.first-build-gallery figure{margin:0;background:#090909;border:1px solid #292929;border-radius:8px;overflow:hidden}
+.first-build-gallery img{width:100%;height:190px;object-fit:cover}
+.first-build-gallery figcaption{padding:10px 12px;color:#aaa;font-size:12px}
+@media(max-width:900px){
+  .first-build-feature{grid-template-columns:1fr}
+  .first-build-gallery{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .first-build-main{min-height:280px}
+  .first-build-copy{padding:24px}
+  .first-build-copy h3{font-size:34px}
+  .first-build-gallery{grid-template-columns:1fr}
+  .first-build-gallery img{height:220px}
+}
+
+/* ===== Homepage v10: premium landing-page hero ===== */
+.hero-v10{
+  position:relative;
+  min-height:590px;
+  overflow:hidden;
+  background:#050505;
+  border-bottom:1px solid #1d1d1d;
+}
+.hero-v10-bg{
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at 77% 42%, rgba(15,45,80,.30), transparent 34%),
+    linear-gradient(115deg, #050505 0%, #050505 39%, #0a0a0a 54%, #050505 100%);
+}
+.hero-v10-grid{
+  position:relative;
+  z-index:2;
+  min-height:590px;
+  display:grid;
+  grid-template-columns:44% 56%;
+  align-items:center;
+  gap:0;
+}
+.hero-v10-copy{
+  position:relative;
+  z-index:4;
+  padding:52px 42px 52px 0;
+}
+.hero-v10-copy:after{
+  content:"";
+  position:absolute;
+  right:-80px;
+  top:0;
+  bottom:0;
+  width:150px;
+  background:linear-gradient(90deg,#050505 0%,rgba(5,5,5,.88) 35%,rgba(5,5,5,0) 100%);
+  pointer-events:none;
+}
+.hero-v10-copy .eyebrow{
+  margin-bottom:15px;
+  font-size:14px;
+}
+.hero-v10 h1{
+  margin:0 0 22px;
+  font-family:"Barlow Condensed",sans-serif;
+  font-size:clamp(56px,5.8vw,82px);
+  line-height:.92;
+  letter-spacing:-1.2px;
+  font-style:italic;
+  font-weight:800;
+  text-transform:uppercase;
+  color:#fff;
+}
+.hero-v10 h1 span{
+  color:#ffd400;
+}
+.hero-v10 p{
+  max-width:520px;
+  margin:0 0 27px;
+  color:#d9d9d9;
+  font-size:17px;
+  line-height:1.68;
+}
+.hero-v10 .hero-actions{
+  margin-bottom:22px;
+}
+.hero-proof{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.hero-proof span{
+  padding:7px 10px;
+  border:1px solid #292929;
+  border-radius:999px;
+  background:#0b0b0b;
+  color:#aaa;
+  font-family:"Barlow Condensed",sans-serif;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.25px;
+}
+.hero-v10-visual{
+  position:relative;
+  height:100%;
+  min-height:590px;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  overflow:hidden;
+}
+.hero-v10-visual:before{
+  content:"";
+  position:absolute;
+  z-index:2;
+  inset:0 auto 0 0;
+  width:120px;
+  background:linear-gradient(90deg,#050505 0%,rgba(5,5,5,.82) 34%,rgba(5,5,5,0) 100%);
+}
+.hero-v10-visual:after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:25%;
+  background:linear-gradient(0deg,#050505 0%,rgba(5,5,5,0) 100%);
+  pointer-events:none;
+}
+.hero-v10-visual img{
+  width:100%;
+  height:100%;
+  min-height:590px;
+  object-fit:cover;
+  object-position:center;
+  filter:brightness(1.08) contrast(1.05) saturate(.98);
+}
+
+/* Give the social strip stronger hierarchy and less visual clutter */
+.social-grid{
+  grid-template-columns:1.05fr repeat(3,1fr);
+}
+.social-title,.social-item{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+/* Premium spacing rhythm */
+.section{
+  padding-top:76px;
+  padding-bottom:76px;
+}
+.section-head{
+  margin-bottom:24px;
+}
+
+@media(max-width:1000px){
+  .hero-v10-grid{
+    grid-template-columns:1fr;
+    min-height:auto;
+  }
+  .hero-v10-copy{
+    padding:44px 0 20px;
+  }
+  .hero-v10-copy:after{
+    display:none;
+  }
+  .hero-v10-visual{
+    min-height:360px;
+  }
+  .hero-v10-visual:before{
+    display:none;
+  }
+  .hero-v10-visual img{
+    min-height:360px;
+    height:360px;
+  }
+}
+@media(max-width:620px){
+  .hero-v10 h1{
+    font-size:50px;
+  }
+  .hero-v10 p{
+    font-size:16px;
+  }
+  .hero-proof{
+    display:grid;
+  }
+}
