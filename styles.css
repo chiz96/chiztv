@@ -178,17 +178,23 @@ linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.40))}
   height: auto;
   border-radius: 14px;
   border: 1px solid rgba(255,255,255,0.12);
-  box-shadow: 0 30px 60px rgba(0,0,0,0.35);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.18);
 }
 
 .hero-bg {
-  opacity: 0.18;
-  filter: blur(2px);
+  opacity: 0.42;
+  filter: blur(1px);
 }
 
 .hero-overlay {
   background:
-    linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.92) 34%, rgba(0,0,0,0.48) 62%, rgba(0,0,0,0.22) 100%);
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,0.72) 0%,
+      rgba(0,0,0,0.62) 34%,
+      rgba(0,0,0,0.28) 62%,
+      rgba(0,0,0,0.10) 100%
+    );
 }
 
 @media (max-width: 1100px) {
