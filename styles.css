@@ -239,3 +239,19 @@
     display:grid;
   }
 }
+
+/* Show the complete BMW before/after comparison instead of cropping either car. */
+.project-history-card .project-img.bmw-comparison{
+  height:auto;
+  aspect-ratio:8 / 3;
+}
+.project-history-card .project-img.bmw-comparison img,
+.transform-card>img.bmw-comparison{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  background:#050505;
+}
+.transform-card>img.bmw-comparison{
+  aspect-ratio:8 / 3;
+}
