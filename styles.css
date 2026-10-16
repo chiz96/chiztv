@@ -255,3 +255,6 @@
 .transform-card>img.bmw-comparison{
   aspect-ratio:8 / 3;
 }
+.project-body a.card-gallery-link{margin-left:14px;color:#fff}
+.project-body a.card-gallery-link:hover{color:#1684ff}
+@media(max-width:620px){.project-body a.card-gallery-link{display:block;margin-left:0;margin-top:12px}}
